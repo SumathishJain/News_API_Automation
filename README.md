@@ -97,7 +97,7 @@ node execution.js
 ## 🙋‍♂️ Author
 
 **Sumathish Jain**  
-SDET | API Automation | Smart Execution Design  
+QA Engineer | API Automation | Smart Execution Design  
 📎 [LinkedIn Profile](https://linkedin.com/in/sumathishjainbr)
 
 ---
