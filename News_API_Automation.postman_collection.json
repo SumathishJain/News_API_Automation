@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "846682bc-61dd-4f0b-8544-a5caf7d27f35",
+		"name": "News_API_Automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41735317"
+	},
+	"item": [
+		{
+			"name": "News_API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const expectedStatusCode = parseInt(pm.iterationData.get(\"expectedStatusCode\"));",
+							"",
+							"const actualStatusCode = pm.response.code;",
+							"",
+							"// 1. Status Code Assertion",
+							"pm.test(`Status code should be ${expectedStatusCode}`, function () {",
+							"    pm.expect(actualStatusCode).to.eql(expectedStatusCode);",
+							"});",
+							"",
+							"// 2. Valid JSON Format Assertion",
+							"pm.test(\"Response is valid JSON\", function () {",
+							"    try {",
+							"        const jsonData = pm.response.json();",
+							"        pm.expect(typeof jsonData).to.eql(\"object\");",
+							"    } catch (error) {",
+							"        pm.expect.fail(\"Response is not a valid JSON: \" + error);",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsdata.io/api/1/news?apikey={{API_KEY}}&q={{Topic}}&country={{country}}&language={{language}}",
+					"protocol": "https",
+					"host": [
+						"newsdata",
+						"io"
+					],
+					"path": [
+						"api",
+						"1",
+						"news"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "{{Topic}}"
+						},
+						{
+							"key": "country",
+							"value": "{{country}}"
+						},
+						{
+							"key": "language",
+							"value": "{{language}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

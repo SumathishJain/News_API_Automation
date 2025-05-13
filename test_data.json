@@ -1,0 +1,75 @@
+[
+    {
+        "TestCaseName": "News_Valid_Request",
+        "Topic": "IPL",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "country": "IN",
+        "language": "kn",
+        "expectedStatusCode": 200
+    },
+    {
+        "TestCaseName": "News_Invalid_API_Key",
+        "Topic": "IPL",
+        "API_KEY": "abcd",
+        "country": "IN",
+        "language": "kn",
+        "expectedStatusCode": 401
+    },
+    {
+        "TestCaseName": "Missing_API_Key",
+        "Topic": "IPL",
+        "API_KEY": "",
+        "country": "IN",
+        "language": "kn",
+        "expectedStatusCode": 401
+    },
+    {
+        "TestCaseName": "Missing_News_Topic",
+        "Topic": "",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "country": "IN",
+        "language": "kn",
+        "expectedStatusCode": 422
+    },
+    {
+        "TestCaseName": "Verify_Valid_Json_Format",
+        "Topic": "IPL",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "country": "IN",
+        "language": "kn",
+        "expectedStatusCode": 200
+    },
+    {
+        "TestCaseName": "Missing_Country_Code",
+        "Topic": "IPL",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "country": "",
+        "language": "kn",
+        "expectedStatusCode": 422
+    },
+    {
+        "TestCaseName": "Invalid_Country_Code",
+        "Topic": "IPL",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "language": "kn",
+        "country": "786544567865467",
+        "expectedStatusCode": 422
+    },
+    {
+        "TestCaseName": "Missing_language",
+        "Topic": "IPL",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "language": "",
+        "country": "786544567865467",
+        "expectedStatusCode": 422
+    },
+    {
+        "TestCaseName": "Invalid_language",
+        "Topic": "IPL",
+        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "language": "abcd",
+        "country": "786544567865467",
+        "expectedStatusCode": 422
+    }
+]
+  
