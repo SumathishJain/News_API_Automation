@@ -2,7 +2,7 @@
     {
         "TestCaseName": "News_Valid_Request",
         "Topic": "IPL",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "country": "IN",
         "language": "kn",
         "expectedStatusCode": 200
@@ -26,7 +26,7 @@
     {
         "TestCaseName": "Missing_News_Topic",
         "Topic": "",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "country": "IN",
         "language": "kn",
         "expectedStatusCode": 422
@@ -34,7 +34,7 @@
     {
         "TestCaseName": "Verify_Valid_Json_Format",
         "Topic": "IPL",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "country": "IN",
         "language": "kn",
         "expectedStatusCode": 200
@@ -42,7 +42,7 @@
     {
         "TestCaseName": "Missing_Country_Code",
         "Topic": "IPL",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "country": "",
         "language": "kn",
         "expectedStatusCode": 422
@@ -50,7 +50,7 @@
     {
         "TestCaseName": "Invalid_Country_Code",
         "Topic": "IPL",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "language": "kn",
         "country": "786544567865467",
         "expectedStatusCode": 422
@@ -58,7 +58,7 @@
     {
         "TestCaseName": "Missing_language",
         "Topic": "IPL",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "language": "",
         "country": "786544567865467",
         "expectedStatusCode": 422
@@ -66,7 +66,7 @@
     {
         "TestCaseName": "Invalid_language",
         "Topic": "IPL",
-        "API_KEY": "pub_8398777eff7d9841265269fa37f6511dc9def",
+        "API_KEY": "pub_83987df7e007fe98903cafc713f048e1a0cc9",
         "language": "abcd",
         "country": "786544567865467",
         "expectedStatusCode": 422
